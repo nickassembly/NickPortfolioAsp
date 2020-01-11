@@ -29,18 +29,19 @@
         <footer>
             <ul class="icons">
                 <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Facebook</span></a></li>
                 <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+
             </ul>
         </footer>
     </section>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
 
     <section id="footer">
         <div class="container">
@@ -50,13 +51,16 @@
         </div>
     </section>
 
-  
+
+
+    @RenderSection("Scripts", required: false)
+
     <script src="~/js/breakpoints.min.js"></script>
     <script src="~/js/browser.min.js"></script>
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/jquery.scrollex.min.js"></script>
     <script src="~/js/jquery.scrolly.min.js"></script>
-
-    @RenderSection("Scripts", required: false)
+    <script src="~/js/main.js"></script>
+    <script src="~/js/util.js"></script>
 </body>
 </html>
