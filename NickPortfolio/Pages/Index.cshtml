@@ -1,5 +1,6 @@
 ﻿@page
 @model IndexModel
+
 @{
     ViewData["Title"] = "Home";
 }
@@ -13,7 +14,7 @@
         <!-- One -->
         <section id="one">
             <div class="image main" data-position="center">
-                <img src="images/banner.jpg" alt="" />
+                <img src="~/images/MainBannerTop.jpg" alt="" />
             </div>
             <div class="container">
                 <header class="major">
@@ -34,15 +35,16 @@
         <section id="two">
             <div class="container">
                 <h3>Current Portfolio</h3>
-                <p>Most of the projects that I work can be found on my Github page, here are a few of the main projects written primarily using .NET and C# </p>
+                <p> I have various side projects written in C#, including a PC game I am working on with other team members. In addition I do work on NET core APIs
+                and various front ends using different tools and frameworks. </p>
                 <div class="features">
                     <article>
                         <a href="https://store.steampowered.com/app/944640/Xenias_Ark/" class="image"><img src="~/images/XaImage.jpg" alt="" /></a>
                         <div class="inner">
                             <h4>Xenia's Ark</h4>
                             <p>
-                                I am part owner of a Gaming Company, Malicious Games LLC. We have recently released our first pc game on the Steam Workshop.
-                                This is a deep strategy game built in C# on the Unity Game Engine.
+                                I am proud to be one of the founding members of Malicious Games LLC. We are getting ready to release our first PC Game, Xenia's Ark, which
+                                is already available on Steam. 
                             </p>
                         </div>
                     </article>
@@ -54,10 +56,12 @@
                         </div>
                     </article>
                     <article>
-                        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="~/images/BookClub.jpg" alt="" /></a>
                         <div class="inner">
-                            <h4>Project 3</h4>
-                            <p>Project three short description</p>
+                            <h4>Book Club</h4>
+                            <p>Book Club is a Web application currently in progress. The end goal is to use my .Net Core API and connect it with 
+                            a React front end. This application will be used to track books and book collections on lists that can be shared with 
+                            other users.</p>
                         </div>
                     </article>
                 </div>
@@ -146,26 +150,27 @@
         </section>
 
         <!-- Six -->
-        <section id="six">
+        @*<section id="six">
             <div class="container">
                 <h3>Contact Me</h3>
                 <p>Feel free to contact me with any questions or comments.</p>
-                <form method="post" action="#">
+                <form method="post" >
                     <div class="row gtr-uniform">
-                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                        <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+                        <div class="col-6 col-12-xsmall"><input type="text" asp-for="sendMail.Name" name="name" id="name" placeholder="Name" /></div>
+                        <div class="col-6 col-12-xsmall"><input type="email" asp-for="sendMail.FromEmail" name="email" id="email" placeholder="Email" /></div>
+                        <div class="col-12"><input type="text" asp-for="sendMail.Subject" name="subject" id="subject" placeholder="Subject" /></div>
+                        <div class="col-12"><textarea asp-for="sendMail.Message" id="message" placeholder="Message" rows="6"></textarea></div>
                         <div class="col-12">
                             <ul class="actions">
-                                <li><input type="submit" class="primary" value="Send Message" /></li>
+                                <li><input type="submit" id="submit" class="primary" value="Send Message" /></li>
                                 <li><input type="reset" value="Reset Form" /></li>
+                                @ViewData["Message"]
                             </ul>
                         </div>
                     </div>
                 </form>
             </div>
-        </section>
+        </section>*@
 
     </div>
 </div>
