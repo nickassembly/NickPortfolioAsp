@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-
+using NickPortfolio.Messaging;
 
 namespace NickPortfolio.Pages
 {
@@ -19,6 +19,8 @@ namespace NickPortfolio.Pages
       {
          _logger = logger;
       }
+
+    //  public Email Email { get; set; }
 
       public void OnGet()
       {
