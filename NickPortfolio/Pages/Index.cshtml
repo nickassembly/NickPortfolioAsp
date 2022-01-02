@@ -25,10 +25,10 @@
                         I am a Software Developer, and I work every day on all stages of software applications from design to implementation and coding.
                     </p>
                 </header>
-                    <p>
-                        My primary knowledge is in the .NET framework, however, I do not consider myself to be locked in to any specific framework or language. Building software applications
-                        is about solving a problem, regardless of technology stack, language, or framework. I use the best tools available to achieve the best results.
-                    </p>
+                <p>
+                    My primary knowledge is in the .NET framework, however, I do not consider myself to be locked in to any specific framework or language. Building software applications
+                    is about solving a problem, regardless of technology stack, language, or framework. I use the best tools available to achieve the best results.
+                </p>
             </div>
         </section>
 
@@ -54,8 +54,9 @@
                         <a href="" class="image"><img src="~/images/ApiImage.jpg" alt="" /></a>
                         <div class="inner">
                             <a href="https://bookclubapiservicev2.azurewebsites.net/swagger"><h4>Role Player</h4></a>
-                            <p>Role Player is a .NET Razor Pages application, which allows me to consolidate various notes and documents from several role playing games in one place.
-                              
+                            <p>
+                                Role Player is a .NET Razor Pages application, which allows me to consolidate various notes and documents from several role playing games in one place.
+
                             </p>
                         </div>
                     </article>
@@ -64,8 +65,8 @@
                         <div class="inner">
                             <a href="https://github.com/nickassembly/BookClub"><h4>Book Club</h4></a>
                             <p>
-                                Book Club is a .NET MVC project that I am working on with other programmers. We are building an application to track books and other media collections between friends. 
-                                This project serves as a platform for testing new technologies and coding techniques, as well as a way for me to track my books and other media. 
+                                Book Club is a .NET MVC project that I am working on with other programmers. We are building an application to track books and other media collections between friends.
+                                This project serves as a platform for testing new technologies and coding techniques, as well as a way for me to track my books and other media.
                             </p>
                         </div>
                     </article>
@@ -78,7 +79,7 @@
             <div class="container">
                 <h3>Other Projects</h3>
                 <p>
-                   In addition to my C# and .Net applications, Here are some other project examples written with JavaScript as well as other libraries and frameworks. 
+                    In addition to my C# and .Net applications, Here are some other project examples written with JavaScript as well as other libraries and frameworks.
                 </p>
                 <div class="row gtr-50 gtr-uniform">
                     <div class="col-4"><span class="image fit"><a href="https://determined-stonebraker-5b95c0.netlify.app/">Covid Tracker<img src="~/images/covid.jpeg" alt="" /></a></span></div>
@@ -89,8 +90,8 @@
                     <div class="col-4"><span class="image fit"><a href="https://condescending-rosalind-63b1e1.netlify.com/">Text To Speech<img src="~/images/text2speech.jpg" alt="" /></a></span></div>
                     <div class="col-4"><span class="image fit"><a href="https://zealous-blackwell-2c108b.netlify.com/">Expense Tracker<img src="~/images/ExpenseTracker.jpg" alt="" /></a></span></div>
                     @*<div class="col-4"><span class="image fit"><a href="https://cocky-euler-0e5de5.netlify.app/">React Burger Maker<img src="~/images/BurgerImage.jpeg" alt="" /></a></span></div>
-                    <div class="col-4"><span class="image fit"><a href="https://determined-jepsen-53a125.netlify.app">Crypto Exchange App<img src="~/images/BlockChainImage.jpeg" alt="" /></a></span></div>*@
-                    <!-- TODO: Burger App and Crypto App need to remove auth so it can be accessed properly (Crypto would require metamask, should just put up front end and 
+                        <div class="col-4"><span class="image fit"><a href="https://determined-jepsen-53a125.netlify.app">Crypto Exchange App<img src="~/images/BlockChainImage.jpeg" alt="" /></a></span></div>*@
+                    <!-- TODO: Burger App and Crypto App need to remove auth so it can be accessed properly (Crypto would require metamask, should just put up front end and
                         try to circumvent the "loading" awaiting screen before going to main page. -->
                 </div>
             </div>
@@ -121,9 +122,11 @@
         <section id="five">
             <div class="container">
                 <h3>Skills and Resume</h3>
-                <p> A short summary of my education, experiences and some of my skills can be found on this  <a href="https://clever-varahamihira-4c18aa.netlify.com/"><strong style="color:#4acaa8;">Resume Page.</strong></a></p>
+                <p> A short summary of my education, experiences and some of my skills can be found on this
+                    <!--TODO style resume page based on VUE Project-->
+                    <a asp-page="Resume" class=""><strong style="color:#4acaa8;">Resume Page</strong></a></p>  
                 <p>
-                    Below are some of the tools and skills I practice and work with daily, however, I am constantly adding new skills, tools, 
+                    Below are some of the tools and skills I practice and work with daily, however, I am constantly adding new skills, tools,
                     and techniques to this list in order to stay relevant in this constantly changing industry.
                 </p>
                 <ul class="feature-icons">
@@ -159,24 +162,24 @@
             </div>
 
             @*<section id="four">
-                    <div class="container">
-                        <h3>Contact Me</h3>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-                        <form method="post" action="#">
-                            <div class="row gtr-uniform">
-                                <div class="col-6 col-12-xsmall"><input type="text" asp-for="Email.From"  name="name" id="name" placeholder="Name" /></div>
-                                <div class="col-6 col-12-xsmall"><input type="email" asp-for="Email.To" name="email" id="email" placeholder="Email" /></div>
-                                <div class="col-12"><input type="text" name="subject" asp-for="Email.Subject" id="subject" placeholder="Subject" /></div>
-                                <div class="col-12"><textarea name="message" id="message" asp-for="Email.Body" placeholder="Message" rows="6"></textarea></div>
-                                <div class="col-12">
-                                    <ul class="actions">
-                                        <li><input type="submit" class="primary" value="Send Message" /></li>
-                                        <li><input type="reset" value="Reset Form" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="container">
+                <h3>Contact Me</h3>
+                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+                <form method="post" action="#">
+                <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall"><input type="text" asp-for="Email.From"  name="name" id="name" placeholder="Name" /></div>
+                <div class="col-6 col-12-xsmall"><input type="email" asp-for="Email.To" name="email" id="email" placeholder="Email" /></div>
+                <div class="col-12"><input type="text" name="subject" asp-for="Email.Subject" id="subject" placeholder="Subject" /></div>
+                <div class="col-12"><textarea name="message" id="message" asp-for="Email.Body" placeholder="Message" rows="6"></textarea></div>
+                <div class="col-12">
+                <ul class="actions">
+                <li><input type="submit" class="primary" value="Send Message" /></li>
+                <li><input type="reset" value="Reset Form" /></li>
+                </ul>
+                </div>
+                </div>
+                </form>
+                </div>
                 </section>*@
 
         </section>
