@@ -5,9 +5,7 @@
     ViewData["Title"] = "Home";
 }
 
-<!--TODO: Remove broken Projects, Add new projects, Redo Resume Page as additional Razor page-->
-<!--TODO: RPG Project, review existing Github Repos -->
-<!--TODO: Add Contact Form --- Email form? -->
+<!--TODO: Add Contact Form / Email form -->
 <!--TODO: Redeploy -- Azure -->
 
 <div id="wrapper">
@@ -51,19 +49,19 @@
                         </div>
                     </article>
                     <article>
-                        <a href="" class="image"><img src="~/images/ApiImage.jpg" alt="" /></a>
+                        <a href="https://rpginfo.azurewebsites.net" class="image"><img src="~/images/ApiImage.jpg" alt="" /></a>
                         <div class="inner">
-                            <a href="https://bookclubapiservicev2.azurewebsites.net/swagger"><h4>Role Player</h4></a>
+                            <a href="https://github.com/nickassembly/RPGInfo.git"><h4>World Manager</h4></a>
                             <p>
-                                Role Player is a .NET Razor Pages application, which allows me to consolidate various notes and documents from several role playing games in one place.
+                                Role Player is a .NET Razor Pages application, which allows me to consolidate various notes and documents to track characters in role playing games.
 
                             </p>
                         </div>
                     </article>
                     <article>
-                        <a href="https://silly-nightingale-57729d.netlify.app/" class="image"><img src="~/images/BookClub.jpg" alt="" /></a>
+                        <a href="https://github.com/nickassembly/BookClubv2.git" class="image"><img src="~/images/BookClub.jpg" alt="" /></a>
                         <div class="inner">
-                            <a href="https://github.com/nickassembly/BookClub"><h4>Book Club</h4></a>
+                            <a href="https://github.com/nickassembly/BookClubv2.git"><h4>Book Club</h4></a>
                             <p>
                                 Book Club is a .NET MVC project that I am working on with other programmers. We are building an application to track books and other media collections between friends.
                                 This project serves as a platform for testing new technologies and coding techniques, as well as a way for me to track my books and other media.
@@ -82,17 +80,12 @@
                     In addition to my C# and .Net applications, Here are some other project examples written with JavaScript as well as other libraries and frameworks.
                 </p>
                 <div class="row gtr-50 gtr-uniform">
-                    <div class="col-4"><span class="image fit"><a href="https://determined-stonebraker-5b95c0.netlify.app/">Covid Tracker<img src="~/images/covid.jpeg" alt="" /></a></span></div>
-                    <div class="col-4"><span class="image fit"><a href="https://confident-stonebraker-3fa489.netlify.com/">People Finder<img src="~/images/peoplefinder.jpg" alt="" /></a></span></div>
-                    <div class="col-4"><span class="image fit"><a href="https://wonderful-cray-405df3.netlify.com/">Pound Converter<img src="~/images/weightconverter.jpg" alt="" /></a></span></div>
-                    <div class="col-4"><span class="image fit"><a href="https://keen-visvesvaraya-bfc1b9.netlify.com/">Current Weather<img src="~/images/weather.jpg" alt="" /></a></span></div>
-                    @*<div class="col-4"><span class="image fit"><a href="https://tender-allen-84e71b.netlify.com/">React Website<img src="~/images/project4.jpg" alt="" /></a></span></div>*@
-                    <div class="col-4"><span class="image fit"><a href="https://condescending-rosalind-63b1e1.netlify.com/">Text To Speech<img src="~/images/text2speech.jpg" alt="" /></a></span></div>
-                    <div class="col-4"><span class="image fit"><a href="https://zealous-blackwell-2c108b.netlify.com/">Expense Tracker<img src="~/images/ExpenseTracker.jpg" alt="" /></a></span></div>
-                    @*<div class="col-4"><span class="image fit"><a href="https://cocky-euler-0e5de5.netlify.app/">React Burger Maker<img src="~/images/BurgerImage.jpeg" alt="" /></a></span></div>
-                        <div class="col-4"><span class="image fit"><a href="https://determined-jepsen-53a125.netlify.app">Crypto Exchange App<img src="~/images/BlockChainImage.jpeg" alt="" /></a></span></div>*@
-                    <!-- TODO: Burger App and Crypto App need to remove auth so it can be accessed properly (Crypto would require metamask, should just put up front end and
-                        try to circumvent the "loading" awaiting screen before going to main page. -->
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/ExpenseTracker.git">Covid Tracker</a><a href="https://determined-stonebraker-5b95c0.netlify.app/"><img src="~/images/covid.jpeg" alt="" /></a></span></div>
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/PeopleFinder.git">People Finder</a><a href="https://confident-stonebraker-3fa489.netlify.com/"><img src="~/images/peoplefinder.jpg" alt="" /></a></span></div>
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/WeightConverter.git">Pound Converter</a><a href="https://wonderful-cray-405df3.netlify.com/"><img src="~/images/weightconverter.jpg" alt="" /></a></span></div>
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/Weather.git">Current Weather</a><a href="https://keen-visvesvaraya-bfc1b9.netlify.com/"><img src="~/images/weather.jpg" alt="" /></a></span></div>              
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/text2speech.git">Text To Speech</a><a href="https://condescending-rosalind-63b1e1.netlify.com/"><img src="~/images/text2speech.jpg" alt="" /></a></span></div>
+                    <div class="col-4"><span class="image fit"><a href="https://github.com/nickassembly/ExpenseTracker.git">Expense Tracker</a><a href="https://zealous-blackwell-2c108b.netlify.com/"><img src="~/images/ExpenseTracker.jpg" alt="" /></a></span></div>                
                 </div>
             </div>
         </section>
@@ -123,7 +116,6 @@
             <div class="container">
                 <h3>Skills and Resume</h3>
                 <p> A short summary of my education, experiences and some of my skills can be found on this
-                    <!--TODO style resume page based on VUE Project-->
                     <a asp-page="Resume" class=""><strong style="color:#4acaa8;">View Resume</strong></a></p>  
                 <p>
                     Below are some of the tools and skills I practice and work with daily, however, I am constantly adding new skills, tools,
@@ -134,7 +126,7 @@
                     <li class="icon solid fa-cubes">.Net</li>
                     <li class="icon solid fa-database">SQL</li>
                     <li class="icon brands fa-html5">Html</li>
-                    <li class="icon brands fa-css3">Css</li>
+                    <li class="icon brands fa-css3">CSS</li>
                     <li class="icon brands fa-js">Javascript</li>
                     <li class="icon brands fa-bootstrap">Bootstrap</li>
                     <li class="icon brands fa-git">Git</li>
@@ -181,8 +173,6 @@
                 </form>
                 </div>
                 </section>*@
-
         </section>
-
     </div>
 </div>
